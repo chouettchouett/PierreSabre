@@ -27,11 +27,11 @@ public class Humain {
 		if (argent < prix) {
 			parler("Je n'ai pas assez d'argent");
 		}else {
-			parler("J'ai assez pour acheter " + bien);	
+			parler("J'ai assez pour acheter " + bien);
+			perdreArgent(prix);
 		}
 	}
-	
-	
+
 	private void gagnerArgent(int gain) {
 		argent += gain;
 	}
