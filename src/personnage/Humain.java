@@ -43,7 +43,7 @@ public class Humain {
 		if (prix > capital) {
 			parler("Je n'ai plus que " + capital + " sous en poche. Je ne peux même pas m'offrir un " + bien + " à " + prix + " sous.");
 		} else {
-			parler("J'ai " + capital + " en poche, je vais pouvoir m'offrir un " + bien + " à " + prix + " sous.");
+			parler("J'ai " + capital + " en poche, je vais pouvoir m'offrir une " + bien + " à " + prix + " sous.");
 			perdreArgent(prix);
 		}
 	}
