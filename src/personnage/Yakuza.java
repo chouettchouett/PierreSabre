@@ -4,7 +4,7 @@ public class Yakuza extends Humain {
 	private String clan;
 	private int reputation = 0;
 
-	public int getReputation() {
+	public int getReputation() {	// pour Ronin
 		return reputation;
 	}
 
