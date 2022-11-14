@@ -1,4 +1,4 @@
-package personnages;
+package personnage;
 
 public class Commercant extends Humain {
 	
@@ -7,7 +7,7 @@ public class Commercant extends Humain {
 	}
 	
 	public int seFaireExtorquer() {
-		parler("J’ai tout perdu! Le monde est trop injuste...");
+		parler("J'ai tout perdu! Le monde est trop injuste...");
 		int perte = getCapital();
 		perdreArgent(perte);
 		return perte;

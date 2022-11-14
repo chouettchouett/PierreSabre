@@ -1,4 +1,4 @@
-package personnages;
+package personnage;
 
 public class Ronin extends Humain{
 	private int honneur = 1;
@@ -12,8 +12,7 @@ public class Ronin extends Humain{
 		perdreArgent(don);
 		parler(beneficiaire.getNom() + " prend ces " + don + " sous." );
 		beneficiaire.recevoirArgent(don);
-	}
-	
+	}	
 	
 	public void provoquer(Yakuza adversaire) {
 		parler("Je t'ai retrouve vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand !");

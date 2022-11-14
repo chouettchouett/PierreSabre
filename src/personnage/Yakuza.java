@@ -1,9 +1,9 @@
-package personnages;
+package personnage;
 
 public class Yakuza extends Humain {
 	private String clan;
 	private int reputation = 0;
-
+	
 	public int getReputation() {	// pour Ronin
 		return reputation;
 	}
@@ -19,7 +19,7 @@ public class Yakuza extends Humain {
 		int gain = victime.seFaireExtorquer();
 		gagnerArgent(gain);
 		reputation++;
-		parler("J’ai piqué les " + gain + " sous de " + victime.getNom() + ", ce qui me fait " + getCapital()
+		parler("J'ai pique les " + gain + " sous de " + victime.getNom() + ", ce qui me fait " + getCapital()
 				+ " sous dans ma poche. Hi ! Hi !");
 	}
 
@@ -34,8 +34,15 @@ public class Yakuza extends Humain {
 	public void gagner(int gain) {
 		gagnerArgent(gain);
 		reputation++;
-		parler("Ce ronin pensait vraiment battre " + getNom() + " du clan de " + clan + "? Je l'ai dépouillé de ses "
+		parler("Ce ronin pensait vraiment battre " + getNom() + " du clan de " + clan + "? Je l'ai depouille de ses "
 				+ gain + " sous.");
 	}
 
+	//tp5
+	@Override
+	public void direBonjour() {
+		parler("Bonjour, je m'apelle " + nom + " et j'aime boire du " + boissonFavorite);
+		parler("Mon clan est celui de" + clan);
+		
+	}
 }

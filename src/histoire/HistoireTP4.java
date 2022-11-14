@@ -1,5 +1,5 @@
 package histoire;
-import personnages.*;
+import personnage.*;
 
 public class HistoireTP4 {
 	
